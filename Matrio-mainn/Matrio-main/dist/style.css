@@ -1,116 +1,3 @@
-/* Content from src/components/navbar/navbar.css */
-.navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between; /* Utiliser space-between pour séparer les boutons */
-    align-items: center;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 3rem;
-}
-
-.navbar-button {
-    height: 3rem;
-    width: auto; /* Utiliser 'auto' pour la largeur afin que les boutons s'ajustent dynamiquement */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px;
-    text-decoration: none;
-}
-
-.navbar-button.blue {
-    background-color: black;
-}
-
-.navbar-button.orange {
-    background-color: black;
-}
-
-.navbar-button.pink {
-    background-color: black;
-}
-
-.navbar-button.purple {
-    background-color: black;
-}
-/* Content from src/components/title/title.css */
-.title {
-    color: rgb(255, 255, 255);
-}
-/* Content from src/pages\resultat\Result.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header, footer {
-    background-color: #007BFF;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.main-content {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.sidebar {
-    flex-basis: 20%;
-}
-
-.sidebar img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.left {
-    padding-right: 10px;
-}
-
-.right {
-    padding-left: 10px;
-}
-
-.quiz-results, .comments {
-    flex-basis: 60%;
-    background-color: #fff;
-    padding: 20px;
-    margin: 0 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.question {
-    margin-bottom: 20px;
-}
-
-.correct {
-    color: #28a745;
-}
-.faux {
-    color: red;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
 /* Content from src/pages\Config\Config.css */
 .body-config{
     display: grid;
@@ -223,44 +110,6 @@ footer {
   }
 
 
-/* Content from src/components/card/card.css */
-.card {
-    color: white;
-}
-/* Content from src/components/template/template.css */
-.template {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    margin-top: 2px;
-}
-
-.template .template-container {
-    max-width: 60%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    flex-direction: column;
-}
-
-.matrio-logo {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    margin: 3rem 0;
-}
-
-.matrio-logo img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    object-fit: contain;
-}
 /* Content from src/pages\Quiz\Quiz.css */
 * {
     margin: 0;
@@ -390,6 +239,114 @@ body {
      margin-top:50px ;
 
 }
+/* Content from src/components/title/title.css */
+.title {
+    color: rgb(255, 255, 255);
+}
+/* Content from src/pages\resultat\Result.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.performance-graphs {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response-analysis, .content-suggestions {
+    background-color: #fff;
+    margin: 10px auto; /* Réglez la marge sur les côtés uniquement */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.performance-graphs img, .response-analysis p, .content-suggestions p {
+    margin: 10px 0;
+    width:100%;
+}
+
+h2 {
+    color: #333;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.graphique img {
+    width: 25%;
+    height: auto;
+}
+
+.sidebar {
+    flex-basis: 20%;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.quiz-results, .comments {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto 10px; /* Déplacez la marge vers le bas */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: #28a745;
+}
+
+.faux {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
 /* Content from src/pages\index.css */
 html {
   width: 100%;
@@ -433,4 +390,81 @@ body {
 
 .card.gray {
   background-color: #D0C9B7;
+}
+/* Content from src/components/navbar/navbar.css */
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Utiliser space-between pour séparer les boutons */
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 3rem;
+}
+
+.navbar-button {
+    height: 3rem;
+    width: auto; /* Utiliser 'auto' pour la largeur afin que les boutons s'ajustent dynamiquement */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    text-decoration: none;
+}
+
+.navbar-button.blue {
+    background-color: black;
+}
+
+.navbar-button.orange {
+    background-color: black;
+}
+
+.navbar-button.pink {
+    background-color: black;
+}
+
+.navbar-button.purple {
+    background-color: black;
+}
+/* Content from src/components/card/card.css */
+.card {
+    color: white;
+}
+/* Content from src/components/template/template.css */
+.template {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.template .template-container {
+    max-width: 60%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.matrio-logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.matrio-logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
 }

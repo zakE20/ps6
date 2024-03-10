@@ -16,12 +16,43 @@ header, footer {
     margin-top: 60px;
 }
 
+.performance-graphs {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response-analysis, .content-suggestions {
+    background-color: #fff;
+    margin: 10px auto; /* Réglez la marge sur les côtés uniquement */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.performance-graphs img, .response-analysis p, .content-suggestions p {
+    margin: 10px 0;
+    width:100%;
+}
+
+h2 {
+    color: #333;
+}
+
 .main-content {
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+}
+
+.graphique img {
+    width: 25%;
+    height: auto;
 }
 
 .sidebar {
@@ -46,9 +77,9 @@ header, footer {
     flex-basis: 60%;
     background-color: #fff;
     padding: 20px;
-    margin: 0 10px;
+    margin: 0 auto 10px; /* Déplacez la marge vers le bas */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .question {
@@ -58,6 +89,7 @@ header, footer {
 .correct {
     color: #28a745;
 }
+
 .faux {
     color: red;
 }
@@ -66,3 +98,5 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+
