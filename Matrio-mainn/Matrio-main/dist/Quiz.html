@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<title>Memoire Vive</title>
+<link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="template">
+<div class="navbar">
+<a class="navbar-button orange" href="/Quiz.html">
+        Quiz
+    </a>
+<a class="navbar-button pink" href="/Result.html">
+        Result
+    </a>
+<a class="navbar-button purple" href="/Config.html">
+        Config
+    </a>
+<a class="navbar-button purple" href="/">
+        HOME
+    </a>
+</div>
+</div>
+
+<div class="container">
+<div class="app" id="quizPage">
+<h1>Mon Quiz<button class="help-btn">AIDE?</button></h1>
+<div class="Quiz">
+<h2 id="question">Qui est cet ?</h2>
+<div id="questions-answers">
+<button class="btn">Bleu</button>
+<button class="btn">Orange</button>
+<button class="btn">Rouge</button>
+<button class="btn">Noir</button>
+</div>
+<button id="next-btn" onclick="showNextPage()">Suivant</button>
+<button id="prev-btn">Precedent</button>
+</div>
+</div>
+<div class="appq2" id="quizPage2" style="display: none;">
+<h1>Mon Quiz<button class="help-btnq2">AIDE?</button></h1>
+<div class="Quiz2">
+<h2 id="question-image">Qui est la coleur rouge?</h2>
+<div class="horizontal-images" id="questions-answers-image">
+<button class="btnq2"><img alt="Bleu" src="blue.png"/></button>
+<button class="btnq2"><img alt="green" src="green.png"/></button>
+<button class="btnq2"><img alt="orange" src="orange.png"/></button>
+<button class="btnq2"><img alt="red" src="red.png"/></button>
+</div>
+<button id="next-btnq2" onclick="showNextPage()">Suivant</button>
+<button id="prev-btnq2" onclick="showPrevPage()">Precedent</button>
+</div>
+</div>
+</div>
+<script>
+    function showNextPage() {
+      document.getElementById('quizPage').style.display = 'none';
+      document.getElementById('quizPage2').style.display = 'block';
+    }
+    function showPrevPage() {
+      document.getElementById('quizPage2').style.display = 'none';
+      document.getElementById('quizPage').style.display = 'block';
+    }
+  </script>
+<script src="scripts/websockets.js"></script></body>
+</html>

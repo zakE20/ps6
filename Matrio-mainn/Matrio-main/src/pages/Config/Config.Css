@@ -1,0 +1,110 @@
+.body-config{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    row-gap: 3%;
+    column-gap: 3%;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .header-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -3px 6px 10px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+  .header-config:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -5px 8px 7px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+  .header-config:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -1px 1px 7px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+
+  .config{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 4%;
+    grid-column: 1;
+    grid-row: 2/6;
+    background-color: #8FFAF1;
+    border-radius: 10px;
+    padding: 2% 2%;
+  }
+  fieldset{
+    background-color: #FFFFF0;
+  }
+
+  .listeQuestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 4%;
+    grid-column: 2;
+    grid-row: 2/6;
+    background-color: #8FFAF1;
+    border-radius: 10px;
+    padding: 2% 2%;
+  }
+
+  .question-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFF0;
+    box-shadow: -3px 6px 10px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+  .question-config:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ACAC97;
+    box-shadow: -5px 8px 7px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+  .question-config:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ACAC97;
+    box-shadow: -1px 1px 7px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+
+  .footer-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    grid-column: 1/3;
+    grid-row: 6;
+    background-color: #48C0B6;
+    border-radius: 10px;
+  }
+

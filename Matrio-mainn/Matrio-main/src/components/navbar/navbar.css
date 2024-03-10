@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Utiliser space-between pour séparer les boutons */
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 3rem;
+}
+
+.navbar-button {
+    height: 3rem;
+    width: auto; /* Utiliser 'auto' pour la largeur afin que les boutons s'ajustent dynamiquement */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    text-decoration: none;
+}
+
+.navbar-button.blue {
+    background-color: black;
+}
+
+.navbar-button.orange {
+    background-color: black;
+}
+
+.navbar-button.pink {
+    background-color: black;
+}
+
+.navbar-button.purple {
+    background-color: black;
+}

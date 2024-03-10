@@ -1,0 +1,436 @@
+/* Content from src/components/navbar/navbar.css */
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Utiliser space-between pour séparer les boutons */
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 3rem;
+}
+
+.navbar-button {
+    height: 3rem;
+    width: auto; /* Utiliser 'auto' pour la largeur afin que les boutons s'ajustent dynamiquement */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    text-decoration: none;
+}
+
+.navbar-button.blue {
+    background-color: black;
+}
+
+.navbar-button.orange {
+    background-color: black;
+}
+
+.navbar-button.pink {
+    background-color: black;
+}
+
+.navbar-button.purple {
+    background-color: black;
+}
+/* Content from src/components/title/title.css */
+.title {
+    color: rgb(255, 255, 255);
+}
+/* Content from src/pages\resultat\Result.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sidebar {
+    flex-basis: 20%;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.quiz-results, .comments {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: #28a745;
+}
+.faux {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Content from src/pages\Config\Config.css */
+.body-config{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    row-gap: 3%;
+    column-gap: 3%;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .header-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -3px 6px 10px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+  .header-config:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -5px 8px 7px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+  .header-config:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: blue;
+    box-shadow: -1px 1px 7px rgb(13, 66, 25);
+    border-radius: 10px;
+  }
+
+  .config{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 4%;
+    grid-column: 1;
+    grid-row: 2/6;
+    background-color: #8FFAF1;
+    border-radius: 10px;
+    padding: 2% 2%;
+  }
+  fieldset{
+    background-color: #FFFFF0;
+  }
+
+  .listeQuestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 4%;
+    grid-column: 2;
+    grid-row: 2/6;
+    background-color: #8FFAF1;
+    border-radius: 10px;
+    padding: 2% 2%;
+  }
+
+  .question-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFF0;
+    box-shadow: -3px 6px 10px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+  .question-config:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ACAC97;
+    box-shadow: -5px 8px 7px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+  .question-config:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ACAC97;
+    box-shadow: -1px 1px 7px rgb(13, 66, 50);
+    border-radius: 10px;
+    padding: 1% 1%;
+  }
+
+  .footer-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    grid-column: 1/3;
+    grid-row: 6;
+    background-color: #48C0B6;
+    border-radius: 10px;
+  }
+
+
+/* Content from src/components/card/card.css */
+.card {
+    color: white;
+}
+/* Content from src/components/template/template.css */
+.template {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.template .template-container {
+    max-width: 60%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.matrio-logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.matrio-logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}
+/* Content from src/pages\Quiz\Quiz.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #001e4d;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.app, .appq2 {
+    background: beige;
+    width: 80%;
+    max-width: 500px;
+    max-height: 900px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1, .appq2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 25px;
+}
+
+.Quiz, .Quiz2
+ {
+    padding: 10px 0;
+}
+
+.Quiz h2, .Quiz2 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
+.btn,  .btnq2 {
+    background: beige;
+    color: #222;
+    font-weight: 500;
+    border: 1px solid #222;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover, .btnq2:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#next-btn, #next-btnq2, #prev-btn, #prev-btnq2 {
+    font-weight: 500;
+    width: 150px;
+    background-color: #001e4d;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+#prev-btn, #prev-btnq2 {
+    text-decoration: none;
+    font-weight: 500;
+    width: 150px;
+    background-color: #001e4d;
+    color: #fff;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px 0 0;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.help-btn, .help-btnq2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #001e4d;
+    background-color: #fff;
+    border: 2px solid #001e4d;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 220px;
+}
+
+.help-btn:hover, .help-btnq2:hover {
+    background-color: #001e4d;
+    color: #fff;
+}
+.btnq2 img {
+    margin-right: 10px;
+    width: 200px;
+    height: 180px; /* Ajoute un espace de 10 pixels à droite de chaque image */
+}
+
+#questions-answers-image {
+    display: flex;
+    flex-direction: row; /* Affiche les boutons d'images horizontalement */
+    justify-content: space-around; 
+     margin-top:50px ;
+
+}
+/* Content from src/pages\index.css */
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  min-width: 300px;
+  width: 100%;
+  height: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card.blue {
+  background-color: #7C98C4;
+}
+
+.card.brown {
+  background-color: #B79D59;
+}
+
+.card.gray {
+  background-color: #D0C9B7;
+}

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #001e4d;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.app, .appq2 {
+    background: beige;
+    width: 80%;
+    max-width: 500px;
+    max-height: 900px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1, .appq2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 25px;
+}
+
+.Quiz, .Quiz2
+ {
+    padding: 10px 0;
+}
+
+.Quiz h2, .Quiz2 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
+.btn,  .btnq2 {
+    background: beige;
+    color: #222;
+    font-weight: 500;
+    border: 1px solid #222;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover, .btnq2:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#next-btn, #next-btnq2, #prev-btn, #prev-btnq2 {
+    font-weight: 500;
+    width: 150px;
+    background-color: #001e4d;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+#prev-btn, #prev-btnq2 {
+    text-decoration: none;
+    font-weight: 500;
+    width: 150px;
+    background-color: #001e4d;
+    color: #fff;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px 0 0;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.help-btn, .help-btnq2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #001e4d;
+    background-color: #fff;
+    border: 2px solid #001e4d;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 220px;
+}
+
+.help-btn:hover, .help-btnq2:hover {
+    background-color: #001e4d;
+    color: #fff;
+}
+.btnq2 img {
+    margin-right: 10px;
+    width: 200px;
+    height: 180px; /* Ajoute un espace de 10 pixels à droite de chaque image */
+}
+
+#questions-answers-image {
+    display: flex;
+    flex-direction: row; /* Affiche les boutons d'images horizontalement */
+    justify-content: space-around; 
+     margin-top:50px ;
+
+}

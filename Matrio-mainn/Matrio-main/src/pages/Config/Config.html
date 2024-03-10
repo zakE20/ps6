@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Memoire Vive</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="body-config">
+  <matrio path="components/template/template" class="brown">
+  </matrio>
+   <header class="header-config">
+    Lancer quiz !
+  </header>
+  <!--L'espace qui permettra de configurer les questions une à une-->
+  <div class="config">
+    <form method="get" action="">
+      <label>Titre</label> : <input type="text" name="titre" id="prenom" size="50" placeholder="Ex : Quelle est la couleur préférée de mon chien ?">
+    </form>
+    <fieldset>
+      <legend>Support :</legend>
+      <form method="get" action="">
+        <input type="checkbox" name="image" id="image"> : <label for="image">Image</label>
+      </form>
+      <form method="get" action="">
+        <input type="checkbox" name="description" id="description"> : <label for="description">description</label>
+      </form>
+      <form method="get" action="">
+        <input type="checkbox" name="son" id="son"> : <label for="son">son</label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Réponses :</legend>
+      <form method="get" action="">
+        <label for="Reponse1">Réponse 1</label> : <input type="text" name="Reponse1" id="Reponse1" placeholder="Ex : Bleu">
+      </form>
+      <form method="get" action="">
+        <label for="Reponse2">Réponse 2</label> : <input type="text" name="Reponse2" id="Reponse2" placeholder="Ex : Rouge">
+      </form>
+      <form method="get" action="">
+        <label for="Reponse3">Réponse 3</label> : <input type="text" name="Reponse3" id="Reponse3" placeholder="Ex : Vert">
+      </form>
+      <form method="get" action="">
+        <label for="Reponse4">Reponse 4</label> : <input type="text" name="Reponse4" id="Reponse4" placeholder="Ex : Violet">
+      </form>
+      <form method="get" action="">
+        <label for="Reponse5">Reponse 5</label> : <input type="text" name="Reponse5" id="Reponse5" placeholder="Ex : Marron">
+      </form>
+      <form method="get" action="">
+        <label for="Reponse6">Reponse 6</label> : <input type="text" name="Reponse6" id="Reponse6" placeholder="Ex : Noir">
+      </form>
+    </fieldset>
+    <form method="get" action="">
+      <label>Aide</label> : <input type="text" name="aide" id="aide" size="50" placeholder="Ex : Il aime les couleurs sombres">
+    </form>
+    <input type="button" name="valider" id="valider" value="Valider">
+  </div>
+  <!--Ici l'espace qui nous permettra de visualiser les question d'un quiz-->
+  <div class="listeQuestion">
+   <div class="question-config">
+     Question 1
+   </div>
+   <div class="question-config">
+     Question 2
+   </div>
+   <div class="question-config">
+     Question 3
+   </div>
+   <div class="question-config">
+     Question 4
+   </div>
+   <div class="question-config">
+     (+)
+   </div>
+  </div>
+  <footer class="footer-config">
+    <a href="./index.html">Mes Quiz</a>
+    <a href="./Quiz.html">Creer Quiz</a>
+    <a href="./Result.html">Statistiques</a>
+  </footer>
+</body>
+</html>
