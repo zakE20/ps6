@@ -6,32 +6,34 @@
 </head>
 <body class="body-config">
 <div class="template">
-<div class="navbar">
-<a class="navbar-button orange" href="/Quiz.html">
-        Quiz
-    </a>
-<a class="navbar-button pink" href="/Result.html">
-        Result
-    </a>
-<a class="navbar-button purple" href="/Config.html">
-        Config
-    </a>
-<a class="navbar-button purple" href="/">
-        HOME
-    </a>
-</div>
+<nav class="navbar">
+<h2 class="logo">Logo <span>quiz</span></h2>
+<ul>
+<li><a href="/">Acceuil</a></li>
+<li><a href="/Quiz.html">Quiz</a></li>
+<li><a href="/Config.html">Config</a></li>
+<li><a href="/Result.html">Resultat</a></li>
+</ul>
+</nav>
 </div>
 
-<header class="header-config">
-    Lancer quiz !
-  </header>
-<!--L'espace qui permettra de configurer les questions une à une-->
+<header>
+<h1 class="header-config">Lancer quiz !</h1>
+</header>
 <div class="config">
 <form action="" method="get">
-<label>Titre</label> : <input id="prenom" name="titre" placeholder="Ex : Quelle est la couleur préférée de mon chien ?" size="50" type="text"/>
+<label for="quizType">Type de question</label> :
+      <select id="quizType" name="quizType">
+<option value="culturel">Culturel</option>
+<option value="historique">Historique</option>
+<option value="geographique">Geographique</option>
+<option value="geographique">Personelle</option>
+</select>
+<label>Titre</label> :
+      <input id="titre" name="titre" placeholder="Ex : Quelle est la couleur preferee de mon chien ?" size="50" type="text"/>
 </form>
 <fieldset>
-<legend>Support :</legend>
+<legend><h4>Support:</h4></legend>
 <form action="" method="get">
 <input id="image" name="image" type="checkbox"/> : <label for="image">Image</label>
 </form>
@@ -43,48 +45,56 @@
 </form>
 </fieldset>
 <fieldset>
-<legend>Réponses :</legend>
 <form action="" method="get">
-<label for="Reponse1">Réponse 1</label> : <input id="Reponse1" name="Reponse1" placeholder="Ex : Bleu" type="text"/>
+<label for="quizRs">Type de Reponse</label> :
+        <select id="quizRs" name="quizR">
+<option value="ImageR">Image</option>
+<option value="TextuelleR">Textuelle</option>
+<option value="AudioR">Auditif</option>
+</select>
+<legend><h4>Reponses:</h4></legend>
+</form><form action="" method="get">
+<label for="Reponse1">Reponse 1</label> : <input id="Reponse1" name="Reponse1" placeholder="Ex : Bleu" type="text"/>
 </form>
 <form action="" method="get">
-<label for="Reponse2">Réponse 2</label> : <input id="Reponse2" name="Reponse2" placeholder="Ex : Rouge" type="text"/>
+<label for="Reponse2">Reponse 2</label> :
+        <input accept="image/*" data-type="image" id="ImageReponse2" name="ImageReponse2" type="file"/>
 </form>
 <form action="" method="get">
-<label for="Reponse3">Réponse 3</label> : <input id="Reponse3" name="Reponse3" placeholder="Ex : Vert" type="text"/>
+<label for="Reponse3">Reponse 3</label> : <input accept="audio/*" data-type="audio" id="AudioReponse3" name="AudioReponse3" type="file"/>
 </form>
 <form action="" method="get">
 <label for="Reponse4">Reponse 4</label> : <input id="Reponse4" name="Reponse4" placeholder="Ex : Violet" type="text"/>
 </form>
-<form action="" method="get">
-<label for="Reponse5">Reponse 5</label> : <input id="Reponse5" name="Reponse5" placeholder="Ex : Marron" type="text"/>
-</form>
-<form action="" method="get">
-<label for="Reponse6">Reponse 6</label> : <input id="Reponse6" name="Reponse6" placeholder="Ex : Noir" type="text"/>
-</form>
 </fieldset>
 <form action="" method="get">
-<label>Aide</label> : <input id="aide" name="aide" placeholder="Ex : Il aime les couleurs sombres" size="50" type="text"/>
+<label for="quizAide">Aide</label> :
+      <select id="quizAide" name="quizAide">
+<option value="culturel">Image</option>
+<option value="historique">texte</option>
+<option value="geographique">Son</option>
+</select>
+<label></label>
+<input id="titre" name="titre" placeholder="Ex : couleur tres claire" size="50" type="text"/>
 </form>
 <input id="valider" name="valider" type="button" value="Valider"/>
 </div>
-<!--Ici l'espace qui nous permettra de visualiser les question d'un quiz-->
 <div class="listeQuestion">
 <div class="question-config">
-     Question 1
-   </div>
+      Question 1
+    </div>
 <div class="question-config">
-     Question 2
-   </div>
+      Question 2
+    </div>
 <div class="question-config">
-     Question 3
-   </div>
+      Question 3
+    </div>
 <div class="question-config">
-     Question 4
-   </div>
+      Question 4
+    </div>
 <div class="question-config">
-     (+)
-   </div>
+      (+)
+    </div>
 </div>
 <footer class="footer-config">
 <a href="./index.html">Mes Quiz</a>

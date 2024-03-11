@@ -115,8 +115,8 @@ body {
 }
 .btnq2 img {
     margin-right: 10px;
-    width: 200px;
-    height: 180px; /* Ajoute un espace de 10 pixels à droite de chaque image */
+    width: 80px;
+    height: 110px; /* Ajoute un espace de 10 pixels à droite de chaque image */
 }
 
 #questions-answers-image {
