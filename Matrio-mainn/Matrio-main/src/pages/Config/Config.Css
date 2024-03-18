@@ -18,7 +18,7 @@
   align-items: center;
   grid-column: 1/3;
   grid-row: 1;
-  background-color: blue;
+  background-color: #45a049;
   box-shadow: -3px 6px 10px rgb(13, 66, 25);
   border-radius: 10px;
   margin: 10px; /* Add margin */
@@ -30,23 +30,12 @@
   align-items: center;
   grid-column: 1/3;
   grid-row: 1;
-  background-color: blue;
+  background-color: #45a049;
   box-shadow: -5px 8px 7px rgb(13, 66, 25);
   border-radius: 10px;
   margin: 10px; /* Add margin */
 }
 
-.header-config:active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  grid-row: 1;
-  background-color: blue;
-  box-shadow: -1px 1px 7px rgb(13, 66, 25);
-  border-radius: 10px;
-  margin: 10px; /* Add margin */
-}
 
 .config {
   display: flex;
@@ -55,7 +44,7 @@
   row-gap: 4%;
   grid-column: 1;
   grid-row: 2/6;
-  background-color: #8FFAF1;
+  background-color: #BFC7CE;
   border-radius: 10px;
   padding: 2% 2%;
   border: 2px solid #333; /* Add border */
@@ -73,7 +62,7 @@ fieldset {
   row-gap: 4%;
   grid-column: 2;
   grid-row: 2/6;
-  background-color: #8FFAF1;
+  background-color: #BFC7CE;
   border-radius: 10px;
   padding: 2% 2%;
   border: 2px solid #333; /* Add border */
@@ -116,18 +105,6 @@ fieldset {
   margin: 10px; /* Add margin */
 }
 
-.footer-config {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  grid-column: 1/3;
-  grid-row: 6;
-  background-color: #48C0B6;
-  border-radius: 10px;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
 #valider {
   background-color: #4CAF50; /* Green background color */
   color: white; /* White text color */

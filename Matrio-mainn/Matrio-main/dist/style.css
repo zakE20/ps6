@@ -1,369 +1,3 @@
-/* Content from src/pages\index.css */
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  display: flex;
-  min-width: 300px;
-  width: 100%;
-  height: 4rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-}
-
-.card.blue {
-  background-color: #7C98C4;
-}
-
-.card.brown {
-  background-color: #B79D59;
-}
-
-.card.gray {
-  background-color: #D0C9B7;
-}
-/* Content from src/pages\Config\Config.css */
-.body-config {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
-  row-gap: 3%;
-  column-gap: 3%;
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 100%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  border: 2px solid #333; /* Add border */
-}
-
-.header-config {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  grid-row: 1;
-  background-color: blue;
-  box-shadow: -3px 6px 10px rgb(13, 66, 25);
-  border-radius: 10px;
-  margin: 10px; /* Add margin */
-}
-
-.header-config:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  grid-row: 1;
-  background-color: blue;
-  box-shadow: -5px 8px 7px rgb(13, 66, 25);
-  border-radius: 10px;
-  margin: 10px; /* Add margin */
-}
-
-.header-config:active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  grid-row: 1;
-  background-color: blue;
-  box-shadow: -1px 1px 7px rgb(13, 66, 25);
-  border-radius: 10px;
-  margin: 10px; /* Add margin */
-}
-
-.config {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: 4%;
-  grid-column: 1;
-  grid-row: 2/6;
-  background-color: #8FFAF1;
-  border-radius: 10px;
-  padding: 2% 2%;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-
-fieldset {
-  background-color: #FFFFF0;
-}
-
-.listeQuestion {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: 4%;
-  grid-column: 2;
-  grid-row: 2/6;
-  background-color: #8FFAF1;
-  border-radius: 10px;
-  padding: 2% 2%;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-
-.question-config {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFF0;
-  box-shadow: -3px 6px 10px rgb(13, 66, 50);
-  border-radius: 10px;
-  padding: 1% 1%;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-
-.question-config:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ACAC97;
-  box-shadow: -5px 8px 7px rgb(13, 66, 50);
-  border-radius: 10px;
-  padding: 1% 1%;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-
-.question-config:active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ACAC97;
-  box-shadow: -1px 1px 7px rgb(13, 66, 50);
-  border-radius: 10px;
-  padding: 1% 1%;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-
-.footer-config {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  grid-column: 1/3;
-  grid-row: 6;
-  background-color: #48C0B6;
-  border-radius: 10px;
-  border: 2px solid #333; /* Add border */
-  margin: 10px; /* Add margin */
-}
-#valider {
-  background-color: #4CAF50; /* Green background color */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Padding for better visual appearance */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Cursor style */
-}
-
-#valider:hover {
-  background-color: #45a049; /* Darker green on hover */
-}
-
-/* Content from src/components/template/template.css */
-.template {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    margin-top: 2px;
-}
-
-.template .template-container {
-    max-width: 60%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    flex-direction: column;
-}
-
-.matrio-logo {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    margin: 3rem 0;
-}
-
-.matrio-logo img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    object-fit: contain;
-}
-/* Content from src/components/title/title.css */
-.title {
-    color: rgb(255, 255, 255);
-}
-/* Content from src/components/card/card.css */
-.card {
-    color: white;
-}
-/* Content from src/components/navbar/navbar.css */
-.navbar {
-    z-index: 9999;
-    width: 100%;
-
-    background-color: #000000; /* Couleur de fond de la navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour une meilleure visibilité */
-    color: #fff;
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right:10%;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.navbar ul li {
-    display: inline-block;
-    padding: 10px 20px;
-    list-style-type: none;
-}
-
-.navbar ul li a:hover {
-    color: red;
-    transition:0.3s;
-}
-/* Content from src/pages\resultat\Result.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header, footer {
-    background-color: #007BFF;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.performance-graphs {
-    flex-basis: 60%;
-    background-color: #fff;
-    padding: 20px;
-    display: grid;
-    margin: 0 auto 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.response-analysis, .content-suggestions {
-    background-color: #fff;
-    margin: 10px auto; /* Réglez la marge sur les côtés uniquement */
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.performance-graphs img, .response-analysis p, .content-suggestions p {
-    margin: 10px 0;
-    width:100%;
-}
-
-h2 {
-    color: #333;
-}
-
-.main-content {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.graphique img {
-    width: 25%;
-    height: auto;
-}
-
-.sidebar {
-    flex-basis: 20%;
-}
-
-.sidebar img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.left {
-    padding-right: 10px;
-}
-
-.right {
-    padding-left: 10px;
-}
-
-.quiz-results, .comments {
-    flex-basis: 60%;
-    background-color: #fff;
-    padding: 20px;
-    margin: 0 auto 10px; /* Déplacez la marge vers le bas */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.question {
-    margin-bottom: 20px;
-}
-
-.correct {
-    color: #28a745;
-}
-
-.faux {
-    color: red;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-
 /* Content from src/pages\Quiz\Quiz.css */
 * {
     margin: 0;
@@ -492,4 +126,339 @@ body {
     justify-content: space-around; 
      margin-top:50px ;
 
+}
+/* Content from src/pages\resultat\Result.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.performance-graphs {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response-analysis, .content-suggestions {
+    background-color: #fff;
+    margin: 10px auto; /* Réglez la marge sur les côtés uniquement */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.performance-graphs img, .response-analysis p, .content-suggestions p {
+    margin: 10px 0;
+    width:100%;
+}
+
+h2 {
+    color: #333;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.graphique img {
+    width: 25%;
+    height: auto;
+}
+
+.sidebar {
+    flex-basis: 20%;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.quiz-results, .comments {
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto 10px; /* Déplacez la marge vers le bas */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: #28a745;
+}
+
+.faux {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Content from src/pages\Config\Config.css */
+.body-config {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  row-gap: 3%;
+  column-gap: 3%;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px solid #333; /* Add border */
+}
+
+.header-config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1;
+  background-color: #45a049;
+  box-shadow: -3px 6px 10px rgb(13, 66, 25);
+  border-radius: 10px;
+  margin: 10px; /* Add margin */
+}
+
+.header-config:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1;
+  background-color: #45a049;
+  box-shadow: -5px 8px 7px rgb(13, 66, 25);
+  border-radius: 10px;
+  margin: 10px; /* Add margin */
+}
+
+
+.config {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 4%;
+  grid-column: 1;
+  grid-row: 2/6;
+  background-color: #BFC7CE;
+  border-radius: 10px;
+  padding: 2% 2%;
+  border: 2px solid #333; /* Add border */
+  margin: 10px; /* Add margin */
+}
+
+fieldset {
+  background-color: #FFFFF0;
+}
+
+.listeQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 4%;
+  grid-column: 2;
+  grid-row: 2/6;
+  background-color: #BFC7CE;
+  border-radius: 10px;
+  padding: 2% 2%;
+  border: 2px solid #333; /* Add border */
+  margin: 10px; /* Add margin */
+}
+
+.question-config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFF0;
+  box-shadow: -3px 6px 10px rgb(13, 66, 50);
+  border-radius: 10px;
+  padding: 1% 1%;
+  border: 2px solid #333; /* Add border */
+  margin: 10px; /* Add margin */
+}
+
+.question-config:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ACAC97;
+  box-shadow: -5px 8px 7px rgb(13, 66, 50);
+  border-radius: 10px;
+  padding: 1% 1%;
+  border: 2px solid #333; /* Add border */
+  margin: 10px; /* Add margin */
+}
+
+.question-config:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ACAC97;
+  box-shadow: -1px 1px 7px rgb(13, 66, 50);
+  border-radius: 10px;
+  padding: 1% 1%;
+  border: 2px solid #333; /* Add border */
+  margin: 10px; /* Add margin */
+}
+
+#valider {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for better visual appearance */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+}
+
+#valider:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Content from src/pages\index.css */
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  min-width: 300px;
+  width: 100%;
+  height: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card.blue {
+  background-color: #7C98C4;
+}
+
+.card.brown {
+  background-color: #B79D59;
+}
+
+.card.gray {
+  background-color: #D0C9B7;
+}
+/* Content from src/components/template/template.css */
+.template {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.template .template-container {
+    max-width: 60%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.matrio-logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.matrio-logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}
+/* Content from src/components/navbar/navbar.css */
+.navbar {
+    z-index: 9999;
+    width: 100%;
+
+    background-color: #000000; /* Couleur de fond de la navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour une meilleure visibilité */
+    color: #fff;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.navbar ul li a:hover {
+    color: red;
+    transition:0.3s;
 }
